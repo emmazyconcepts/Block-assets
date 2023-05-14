@@ -1,0 +1,111 @@
+header {
+  background-color: #16181d;
+  color: white;
+}
+.header--active {
+  background-color: #16181d;
+}
+@media (min-width: 1200px) {
+  .header__nav a:hover {
+    color: #ffba00;
+  }
+  .header__nav a {
+    color: white;
+  }
+}
+body section.section {
+  background: #2c2443;
+  color: white;
+}
+body section.section h2,
+h3,
+p,
+i {
+  color: white !important;
+}
+.home__feature h3 {
+  color: #16181d !important;
+}
+.home__feature {
+  background-color: #09eab4;
+}
+.home__feature i::after {
+  background-color: #16181d;
+}
+.home::after {
+  background-color: #93fcec;
+}
+.currenc span {
+  color: white !important;
+}
+.btn {
+  background-color: #09eab4 !important;
+}
+.btn--border {
+  border-color: #16181d !important;
+  color: #16181d;
+}
+.btn--shadow {
+  box-shadow: 0 6px 9px 0 rgba(78, 188, 179, 0.6);
+}
+.step i::after {
+  background-color: #ffba00 !important;
+}
+.sign__content::after {
+  background-color: #ffba00 !important;
+}
+.form__input,
+.form__select,
+.form__textarea {
+  background-color: #eac781 !important;
+}
+footer {
+  background: #2c2443 !important;
+}
+.footer__title {
+  color: white;
+}
+.footer__list a {
+  color: white !important;
+}
+
+.footer__copyright a {
+  color: white !important;
+}
+
+.section__particles::after {
+  box-shadow: none;
+}
+.home__particles::after {
+  background: none;
+}
+/*Google Styling*/
+
+#google_translate_element {
+  position: fixed;
+  background-color: #16181d;
+  z-index: 9;
+  padding: 8px;
+  border-radius: 7px;
+  bottom: 10%;
+  left: 5%;
+  box-shadow: 0px 2px 18px 2px rgba(43, 86, 245, 0.25);
+}
+
+.goog-te-gadget {
+  font-size: 0px !important;
+  font-family: Roboto, "Open Sans", sans-serif !important;
+  text-transform: uppercase;
+}
+
+.goog-logo-link {
+  display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
