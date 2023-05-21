@@ -7,7 +7,7 @@ header {
 }
 @media (min-width: 1200px) {
   .header__nav a:hover {
-    color: #ffba00;
+    color: #09eab4;
   }
   .header__nav a {
     color: white;
@@ -49,15 +49,15 @@ i {
   box-shadow: 0 6px 9px 0 rgba(78, 188, 179, 0.6);
 }
 .step i::after {
-  background-color: #ffba00 !important;
+  background-color: #09eab4 !important;
 }
 .sign__content::after {
-  background-color: #ffba00 !important;
+  background-color: #09eab4 !important;
 }
 .form__input,
 .form__select,
 .form__textarea {
-  background-color: #eac781 !important;
+  background-color: #9ff3df !important;
 }
 footer {
   background: #2c2443 !important;
