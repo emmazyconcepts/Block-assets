@@ -1,0 +1,158 @@
+/*Google Styling*/
+
+#google_translate_element {
+  position: fixed;
+  background-color: #000;
+  z-index: 9;
+  padding: 8px;
+  border-radius: 7px;
+  bottom: 2%;
+  left: 5%;
+  box-shadow: 0px 2px 18px 2px rgba(43, 86, 245, 0.25);
+}
+
+.goog-te-gadget {
+  font-size: 0px !important;
+  font-family: Roboto, "Open Sans", sans-serif !important;
+  text-transform: uppercase;
+}
+
+.goog-logo-link {
+  display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+  background: url(../../../assets/images/body-bg.png), #16181d;
+}
+
+.user-panel {
+  background: transparent;
+}
+
+h2 {
+  color: #fcb916;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+a {
+  color: #fcb916;
+}
+
+.topbar-action-item > a {
+  color: #fcb916;
+}
+
+.topbar-action-item > a :hover {
+  color: #fff;
+}
+
+.toggle-line {
+  background: #fcb916;
+}
+
+.user-name {
+  color: white;
+}
+
+.topbar-md {
+  background: #2a2e37;
+}
+
+.topbar {
+  background: #2a2e37;
+}
+
+.user-sidebar::before {
+  background: #2a2e37;
+}
+
+.user-dropdown-head::after {
+  border-bottom: 7px solid #2a2e37;
+}
+
+.footer-copyright {
+  color: white;
+}
+
+.footer-links {
+  color: white;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a {
+  color: #fcb916;
+}
+a {
+  outline: 0;
+  transition: all 0.5s;
+  color: #2b56f5;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.footer-copyright {
+  color: white;
+}
+.footer-bar {
+  font-size: 13px;
+  color: #6783b8;
+}
+
+.footer-bar a {
+  color: #fff;
+}
+
+.footer-bar a:hover,
+.footer-bar a:focus {
+  color: #fcb916;
+}
+
+.payment-item label {
+  border: 2px solid #fff;
+  background: #fcb916;
+}
+
+.payment-item label::after {
+  background: #fcb916;
+}
+
+.payment-item input[type="radio"]:checked ~ label {
+  border-color: #000;
+}
+
+.tranx-payment-details {
+  background: #fcb916;
+  padding: 23px;
+  border-radius: 20px;
+}
+
+.nav-tabs .nav-link.active {
+  padding: 10px;
+}
+
+.btn {
+  font-weight: bold !important;
+}

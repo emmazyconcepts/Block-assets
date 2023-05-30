@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <!-- Site Title  -->
+    <title>Dashboard | User - Chain-Pocket</title>
+    <!-- Title Components -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/stylesheets/theme-styles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/stylesheets/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/stylesheets/blocks.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/stylesheets/plugins.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="author" content="Chain-Pocket" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fav Icon  -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Vendor Bundle CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundled.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/styled.css" />
+    <link rel="stylesheet" href="assets/css/custom.css?version=1" />
+    <link rel="stylesheet" href="assets/notiflix/notiflix.css" />
+  </head>
+
+  <body class="user-dashboard">
+    <!-- TopBar -->
+    <div class="topbar">
+      <div class="topbar-md d-lg-none">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="toggle-nav">
+              <div class="toggle-icon">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+              </div> </a
+            ><!-- .toggle-nav -->
+
+            <div class="site-logo">
+              <a href="../" class="site-brand">
+                <img
+                  src="../assets/images/logo-primary.png"
+                  alt="logo"
+                  srcset="../assets/images/logo-primary.png 2x"
+                  style="max-width: 100%; height: 50px"
+                />
+              </a>
+            </div>
+            <!-- .site-logo -->
+
+            <div class="dropdown topbar-action-item topbar-action-user">
+              <a
+                href="mails.php"
+                style="color: #fcb916; margin-right: 5px; font-size: 20px"
+                ><em class="ti ti-bell" class="icon"></em
+              ></a>
+              <a href="security.php" style="font-size: 20px">
+                <em class="ti ti-settings" class="icon"></em
+              ></a>
+            </div>
+            <!-- .toggle-action -->
+          </div>
+          <!-- .container -->
+        </div>
+        <!-- .container -->
+      </div>
+      <!-- .topbar-md -->
+      <div class="container">
+        <div class="d-lg-flex align-items-center justify-content-between">
+          <div class="topbar-lg d-none d-lg-block">
+            <div class="site-logo">
+              <a href="../" class="site-brand">
+                <img
+                  src="../assets/images/logo-primary.png"
+                  alt="logo"
+                  srcset="../assets/images/logo-primary.png 2x"
+                  style="max-width: 100%; height: 50px"
+                />
+              </a>
+            </div>
+            <!-- .site-logo -->
+          </div>
+          <!-- .topbar-lg -->
+
+          <div class="topbar-action d-none d-lg-block">
+            <ul class="topbar-action-list">
+              <li class="topbar-action-item topbar-action-link">
+                <a href="account.php" style="color: white"
+                  ><em class="ti ti-settings"></em>Setting</a
+                >
+              </li>
+              <!-- .topbar-action-item -->
+              <li class="topbar-action-item topbar-action-link">
+                <a href="mails.php" style="color: white"
+                  ><em class="ti ti-bell"></em>Mail</a
+                >
+              </li>
+              <!-- .topbar-action-item -->
+            </ul>
+            <!-- .topbar-action-list -->
+          </div>
+          <!-- .topbar-action -->
+        </div>
+        <!-- .d-flex -->
+      </div>
+      <!-- .container -->
+    </div>
+
+    <!-- Google Translate -->
+    <div id="google_translate_element"></div>
+
+    <!-- Trading View  -->
+    <iframe
+      scrolling="no"
+      allowtransparency="true"
+      style="box-sizing: border-box; height: 50px; width: 100%"
+      src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22Ethereum%22%7D%2C%7B%22description%22%3A%22Litecoin%22%2C%22proName%22%3A%22BINANCE%3ALTCUSDT%22%7D%2C%7B%22description%22%3A%22Doge%22%2C%22proName%22%3A%22BINANCE%3ADOGEUSDT%22%7D%2C%7B%22description%22%3A%22BNB%22%2C%22proName%22%3A%22CRYPTOCAP%3ABNB%22%7D%2C%7B%22description%22%3A%22TRON%22%2C%22proName%22%3A%22BINANCE%3ATRXUSDT%22%7D%2C%7B%22description%22%3A%22SOLANA%22%2C%22proName%22%3A%22FTX%3ASOLUSD%22%7D%2C%7B%22description%22%3A%22USDT%22%2C%22proName%22%3A%22CRYPTOCAP%3AUSDT%22%7D%2C%7B%22description%22%3A%22Polkadot%22%2C%22proName%22%3A%22KUCOIN%3ADOTUSDT%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%%22%2C%22colorTheme%22%3A%22dark25%22%2C%22height%22%3A78%2C%22utm_source%22%3A%22localhost%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D"
+      frameborder="0"
+    ></iframe>
+    <!-- TopBar End -->
+
+    <div class="user-wraper">
+      <div class="container">
+        <div class="d-flex">
+          <!-- user sidebar -->
+          <div class="user-sidebar">
+            <div class="user-sidebar-overlay"></div>
+            <div class="user-box d-none d-lg-block">
+              <h2>Welcome back!</h2>
+              <h6 class="user-name">test test</h6>
+            </div>
+            <!-- .user-box -->
+            <style>
+              .user-icon-nav li a {
+                line-height: 30px;
+                padding-left: 20px;
+              }
+            </style>
+            <ul class="user-icon-nav">
+              <li>
+                <a
+                  href="index.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-dashboard" style="color: #fff"></i
+                  >Dashboard</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="send.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-export" style="color: #fff"></i>Send</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="recieve.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-import" style="color: #fff"></i>Receive</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="swap.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-money" style="color: #fff"></i>Swap</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="ico.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><img
+                    src="../assets/images/logo-primary.png"
+                    height="40"
+                    width="40"
+                    style="margin-left: 5px"
+                  />
+                  Chain Token</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="transfers.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-reload" style="color: #fff"></i>Chain
+                  Transfer</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="staking.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-bar-chart-alt" style="color: #fff"></i
+                  >Staking</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="stakes.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-receipt" style="color: #fff"></i>Stakes</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="transactions.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-layout-grid3" style="color: #fff"></i
+                  >Transaction</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="affiliate.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background-color: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-user" style="color: #fff"></i>Afilliate</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="mails.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background-color: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-bell" style="color: #fff"></i>Mail</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="security.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background-color: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-lock" style="color: #fff"></i>Security</a
+                >
+              </li>
+              <div class="gaps-1x"></div>
+              <div class="user-sidebar-sap" style="width: 100%"></div>
+              <!-- .user-sidebar-sap -->
+              <div class="gaps-1x"></div>
+              <li>
+                <a
+                  href="account.php"
+                  class="btn btn-primary"
+                  style="
+                    color: white;
+                    background-color: #fcb916;
+                    border: 2px solid white;
+                  "
+                  ><i class="ti ti-key" style="color: #fff"></i>Account</a
+                >
+              </li>
+              <!-- Swiss Settings ends -->
+            </ul>
+            <!-- .user-icon-nav -->
+            <ul class="user-nav">
+              <!-- <li><a href="how-to.php">How to buy?</a></li> -->
+              <!-- <li><a href="faq.php">Faqs</a></li> -->
+              <!-- <li>Contact Support<span>info@icocrypto.com</span></li> -->
+            </ul>
+            <!-- .user-nav -->
+            <div class="d-lg-none">
+              <div class="user-sidebar-sap"></div>
+              <div class="gaps-1x"></div>
+              <ul class="topbar-action-list">
+                <li class="topbar-action-item topbar-action-link">
+                  <a href="../"><em class="ti ti-home"></em>Home</a>
+                </li>
+                <!-- .topbar-action-item -->><br />
+                <li class="topbar-action-item topbar-action-link">
+                  <a href="../support.php" target="_blank"
+                    ><em class="ti ti-comment"></em>Support</a
+                  >
+                </li>
+                <!-- .topbar-action-item -->>
+              </ul>
+              <!-- .topbar-action-list -->
+            </div>
+          </div>
+          <!-- .user-sidebar -->
+
+          <div class="user-content">
+            <h2><strong>Chain-Pocket</strong></h2>
+            <div class="user-panel">
+              <div class="tile">
+                <div class="tile-item tile-primary" style="background: #fcb916">
+                  <div class="tile-bubbles"></div>
+                  <h6 class="tile-title">TOTAL ASSETS</h6>
+                  <h1 class="tile-info" id="portfolio_balance">$ 0</h1>
+                  <ul class="tile-list-inline">
+                    <li style="color: white" id="portfolio_balance_mini">
+                      0 USD
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- .col -->
+              <div class="gaps-1x"></div>
+              <a
+                href="staking.php"
+                class="btn btn-warning btn-lg mb-2"
+                style="width: 100%"
+                ><i class="ti ti-rocket" style="color: #fff"></i>Chain
+                Contorllers</a
+              ><br />
+              <div class="gaps-2x"></div>
+              <a href="stakes.php" class="btn btn-light" style="width: 100%"
+                >View Bot Stakings</a
+              ><br />
+              <div class="gaps-2x"></div>
+              <a href="buy.php" class="btn btn-warning" style="width: 100%"
+                >Buy assets</a
+              >
+              <div class="gaps-2x"></div>
+              <div class="refferal-statistics" style="background: #fcb916">
+                <h4>ChainToken</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="refferal-statistics-item">
+                      <h6 style="color: white">Balance</h6>
+                      <span style="color: white">0.000000 CTK </span>
+                    </div>
+                  </div>
+                  <!-- .col -->
+                  <div class="col-md-4">
+                    <div class="refferal-statistics-item">
+                      <h6 style="color: white">Dollar Equivalent</h6>
+                      <span style="color: white">$ 0.0000</span>
+                    </div>
+                  </div>
+                  <!-- .col -->
+                  <div class="col-md-4">
+                    <div class="refferal-statistics-item">
+                      <h6 style="color: white">Token Value</h6>
+                      <span style="color: white">$ 2.5</span>
+                    </div>
+                  </div>
+                  <!-- .col -->
+                </div>
+                <!-- .row -->
+              </div>
+              <div class="gaps-2x"></div>
+
+              <h4>Wallet Overview</h4>
+              <a class="btn btn-warning" href="chart.php">View Chart</a>
+              <div class="gaps-1x"></div>
+              <table class="pricing-tables-wrap-table-blurring">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Currency</th>
+                    <th>Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>1</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAIAAAC1nk4lAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAyElEQVRoge2YQQqDQBAEY8jzfIZ33+LdZ/jA3IIsJEjSU2Gg6ios5dD0Djsd+3rrxv3fAt+gNIXSFEpTKE2hNIXSFEpTPCKnzMv27lPFvj79fugH4zNBey4eF//tCpl4vBjGOYjOyxaZd+2kj32tyDQRj7g3XXmRZLfsaaUpCOlzjhtUXhHhy2Vg6IpU94Wlmc0Jikf2fqmNx61mNa1dmIpo2R5KUyhNoTRFS+nAuwdPy0krTaE0hdIUSlMoTaE0hdIUSlO0lH4CVHsnu6lofOUAAAAASUVORK5CYII="
+                          class="woox-icon"
+                          alt="PEPE (PEPE)"
+                        />
+                        <h6 class="pricing-title">
+                          PEPE (PEPE)<br />
+                          <span class="coin-id">pepe</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="pepe"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="pepe"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>2</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/binancecoin.png"
+                          class="woox-icon"
+                          alt="BNB (SMART)"
+                        />
+                        <h6 class="pricing-title">
+                          BNB (SMART)<br />
+                          <span class="coin-id">binancecoin</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="binancecoin"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="binancecoin"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>3</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/solana.png"
+                          class="woox-icon"
+                          alt="SOLANA (SOL)"
+                        />
+                        <h6 class="pricing-title">
+                          SOLANA (SOL)<br />
+                          <span class="coin-id">solana</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="solana"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="solana"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>4</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/cardano.png"
+                          class="woox-icon"
+                          alt="CARDANO (ADA)"
+                        />
+                        <h6 class="pricing-title">
+                          CARDANO (ADA)<br />
+                          <span class="coin-id">cardano</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="cardano"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="cardano"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>5</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/polkadot.png"
+                          class="woox-icon"
+                          alt="POLKADOT (DOT)"
+                        />
+                        <h6 class="pricing-title">
+                          POLKADOT (DOT)<br />
+                          <span class="coin-id">polkadot</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="polkadot"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="polkadot"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>6</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/tron.png"
+                          class="woox-icon"
+                          alt="TRON (TRX)"
+                        />
+                        <h6 class="pricing-title">
+                          TRON (TRX)<br />
+                          <span class="coin-id">tron</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="tron"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="tron"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>7</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/dogecoin.png"
+                          class="woox-icon"
+                          alt="DOGECOIN (DOGE)"
+                        />
+                        <h6 class="pricing-title">
+                          DOGECOIN (DOGE)<br />
+                          <span class="coin-id">dogecoin</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="dogecoin"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="dogecoin"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>8</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/shiba-inu.png"
+                          class="woox-icon"
+                          alt="SHIBA INU (SHIB)"
+                        />
+                        <h6 class="pricing-title">
+                          SHIBA INU (SHIB)<br />
+                          <span class="coin-id">shiba-inu</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="shiba-inu"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="shiba-inu"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>9</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/tether.png"
+                          class="woox-icon"
+                          alt="TETHER (TRC)"
+                        />
+                        <h6 class="pricing-title">
+                          TETHER (TRC)<br />
+                          <span class="coin-id">tether</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="tether"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="tether"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>10</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/tether.png"
+                          class="woox-icon"
+                          alt="SINGULARITYNET ( AGIX )"
+                        />
+                        <h6 class="pricing-title">
+                          SINGULARITYNET ( AGIX )<br />
+                          <span class="coin-id">tether</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="tether"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="tether"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>11</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/litecoin.png"
+                          class="woox-icon"
+                          alt="LITECOIN (LTC)"
+                        />
+                        <h6 class="pricing-title">
+                          LITECOIN (LTC)<br />
+                          <span class="coin-id">litecoin</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="litecoin"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="litecoin"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>12</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/ethereum.png"
+                          class="woox-icon"
+                          alt="ETHEREUM (ETH)"
+                        />
+                        <h6 class="pricing-title">
+                          ETHEREUM (ETH)<br />
+                          <span class="coin-id">ethereum</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="ethereum"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="ethereum"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown coin-list"
+                  >
+                    <td>13</td>
+                    <td>
+                      <div class="pricing-thumb">
+                        <img
+                          src="assets/wallet-assets/bitcoin.png"
+                          class="woox-icon"
+                          alt="BITCOIN (BTC)"
+                        />
+                        <h6 class="pricing-title">
+                          BITCOIN (BTC)<br />
+                          <span class="coin-id">bitcoin</span>
+                        </h6>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="currency-details-item">
+                        <div
+                          class="value c-primary coin-usd-balance"
+                          coin-id="bitcoin"
+                        >
+                          $0
+                        </div>
+                        <div
+                          class="value c-secondary coin-quantity"
+                          coin-id="bitcoin"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <input type="hidden" name="" id="coinCS" />
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="8"></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- .user-panel -->
+          </div>
+          <!-- .user-content -->
+        </div>
+        <!-- .d-flex -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- UserWraper End -->
+
+    <!-- Footer Components -->
+    <div class="footer-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <span class="footer-copyright"
+              >Copyright 2022, <a href="#">Chain-Pocket</a>. All Rights
+              Reserved.</span
+            >
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- FooterBar End -->
+
+    <script src="assets/js/jquery.bundled.js"></script>
+    <script src="assets/js/scriptd.js"></script>
+    <script src="assets/js/__Numeric.js"></script>
+    <script src="assets/notiflix/notiflix.js"></script>
+    <script src="assets/js/pages/index.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <!-- LIVE CHAT -->
+    <!-- JavaScript (include all script here) -->
+  </body>
+</html>
